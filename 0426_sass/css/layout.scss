@@ -1,0 +1,252 @@
+// 서식 초기화
+*{
+  margin: 2px; padding:0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+// 중단점 설정
+$bp-pc: 1024px;
+$bp-tablet: 769px;
+$bp-mobile: 768px;
+
+
+// PC (1024px 이상 ~ 1920px)
+@media(min-width: $bp-pc){
+
+  // 랩 서식
+  .wrap{
+    border: 3px solid red;
+  }
+
+  // 헤더
+  header {
+    height: 123px;
+    background: lightblue;
+  }
+
+  // 메인-비주얼
+  main > .visual {
+    height: 300px;
+    background: lightgreen;
+    border: 3px solid #111;
+  }
+
+  // 메인-cont01
+  main > .cont01 {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 3px solid #111;
+    margin: 10px 0;
+  }
+
+  @mixin box-css01 {
+    width: 280px;
+    background: lightcoral;
+  }
+  main > .cont01 > .box01 {
+    @include box-css01;
+  }
+  main > .cont01 > .box02 {
+    width: 380px;
+    background: lightcoral;
+  }
+  main > .cont01 > .box03 {
+    @include box-css01;
+  }
+
+  // 메인-cont02
+  main > .cont02 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 3px solid #111;
+    margin: 10px 0;
+  }
+  @mixin box-css02 {
+    width: 280px;
+    background: lightseagreen;
+  }
+  main > .cont02 > .box04 {
+    @include box-css02;
+  }
+  main > .cont02 > .box05 {
+    width: 380px;
+    background: lightseagreen;
+  }
+  main > .cont02 > .box06 {
+    @include box-css02;
+  }
+
+  // 푸터
+  footer {
+    height: 110px;
+    background: lightgoldenrodyellow;
+  }
+}
+
+// TABLET (768px 이상 ~ 1024px 이하)
+@media(min-width: $bp-tablet) and (max-width: $bp-pc){
+
+  // 랩 서식
+  .wrap{
+    border: 3px solid red;
+  }
+
+  // 헤더
+  header {
+    height: 123px;
+    background: lightblue;
+  }
+
+  // 메인-비주얼
+  main > .visual {
+    height: 300px;
+    background: lightgreen;
+    border: 3px solid #111;
+  }
+
+  // 메인-cont01
+  main > .cont01 {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    border: 3px solid #111;
+    margin: 10px 0;
+  }
+
+  @mixin box-css01 {
+    width: 48%;
+    background: lightcoral;
+  }
+  main > .cont01 > .box01 {
+    @include box-css01;
+  }
+  main > .cont01 > .box02 {
+    @include box-css01;
+  }
+  main > .cont01 > .box03 {
+    width: 100%;
+    background: lightcoral;
+  }
+
+  // 메인-cont02
+  main > .cont02 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    border: 3px solid #111;
+    margin: 10px 0;
+  }
+  @mixin box-css02 {
+    width: 48%;
+    background: lightseagreen;
+  }
+  main > .cont02 > .box04 {
+    @include box-css02;
+  }
+  main > .cont02 > .box05 {
+    @include box-css02;
+  }
+  main > .cont02 > .box06 {
+    width: 100%;
+    background: lightseagreen;
+  }
+
+  // 푸터
+  footer {
+    height: 110px;
+    background: lightgoldenrodyellow;
+  }
+}
+
+// MOBILE (768px 이하)
+@media(max-width: $bp-mobile){
+  
+  // 랩 서식
+  .wrap{
+    border: 3px solid red;
+  }
+
+  // 헤더
+  header {
+    height: 80px;
+    background: lightblue;
+  }
+
+  // 메인-비주얼
+  main > .visual {
+    height: 270px;
+    background: lightgreen;
+    border: 3px solid #111;
+  }
+
+  // 메인-cont01
+  main > .cont01 {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    border: 3px solid #111;
+    margin: 10px 0;
+  }
+
+  @mixin box-css01 {
+    width:100%;
+    background: lightcoral;
+  }
+  main > .cont01 > .box01 {
+    @include box-css01;
+  }
+  main > .cont01 > .box02 {
+    @include box-css01;
+  }
+  main > .cont01 > .box03 {
+    @include box-css01;
+  }
+
+  // 메인-cont02
+  main > .cont02 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    border: 3px solid #111;
+    margin: 10px 0;
+  }
+  @mixin box-css02 {
+    width: 100%;
+    background: lightseagreen;
+  }
+  main > .cont02 > .box04 {
+    @include box-css02;
+  }
+  main > .cont02 > .box05 {
+    @include box-css02;
+  }
+  main > .cont02 > .box06 {
+    @include box-css02;
+  }
+
+  // 푸터
+  footer {
+    height: 110px;
+    background: lightgoldenrodyellow;
+  }
+}

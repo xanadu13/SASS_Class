@@ -1,0 +1,75 @@
+$margin:10px;
+$padding:10px;
+
+.list{
+  h3{
+    padding:$padding;
+    margin:$margin;
+    border:1px solid #0f0;
+    font:{
+      family:'궁서체';
+      size:30px;
+      weight:bold;
+      style:italic;
+    }
+  }
+  ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+  }
+  li{
+    padding:10px;
+    margin:10px;
+    border:1px solid #f00;
+  }
+  a{
+    text-decoration:none;
+    color:#00f;
+  }
+}
+
+// 탭메뉴 서식
+//변수선언과 값 설정하기
+$box-si:border-box;
+$t_height:218px;
+$display:flex;
+$f_color:#333;
+
+.tab *{margin:0px;padding:0px;}
+.tab{
+  width:580px;
+	height:$t_height;
+	display:$display;
+	margin:auto;
+	border:2px solid #00f;
+  .tabcon{
+    width:350px;
+  }
+  .tabcon img{
+    width:100%;
+  }
+  ul{
+    width:230px;
+    height:$t_height;
+  }
+  ul li{
+    list-style:none;
+    height:25%;
+  }
+  ul li a{
+    padding-top:10px;
+    display:block;
+    height:100%;
+    text-decoration:none;
+    font{
+      size:12px;
+    }
+    color:$f_color;
+  }
+  ul li a.on{
+    background:#0081a1;
+    color:#fff;
+  }
+
+}

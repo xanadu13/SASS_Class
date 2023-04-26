@@ -1,0 +1,42 @@
+div {
+  height: 50px;
+  border: 3px solid #000;
+  margin-bottom: 20px;
+}
+
+.box01 {
+  width: 400px;
+  background: lightblue;
+}
+
+.box02 {
+  width: 700px;
+  background: pink;
+}
+
+.box03, .box04 {
+  height: 50px;
+  border: 3px solid #000;
+  margin-bottom: 20px;
+}
+
+.box03 {
+  width: 768px;
+  background: lightgoldenrodyellow;
+}
+
+.box04 {
+  width: 1025px;
+  background: lightgreen;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: lightyellow;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background: lightyellow;
+  }
+}/*# sourceMappingURL=style2.css.map */

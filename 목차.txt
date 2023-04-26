@@ -1,0 +1,9 @@
+1. SASS 소개와 문법
+2. 변수의 선언과 사용(전역, 지역변수)
+3. 선택자 중첩작성(nesting)
+4. import(다른 scss삽입)
+5. @mixin 믹스인명, @include 믹스인명
+6. @mixin 믹스인명($변수명:값)
+7. @function(사용자 함수)
+8. if와 @if(조건문)	
+9. @for(반복문)
